@@ -1,3 +1,5 @@
+PROJECT IN PROGRESS 
+
 Making a chatbot using NMT based on subreddits messages.
 
 Data Resources: https://convokit.cornell.edu/documentation/subreddit.html
