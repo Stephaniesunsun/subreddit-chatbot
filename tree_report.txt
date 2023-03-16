@@ -1,0 +1,920 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 45 files
+Detected 123 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: nmt-chatbot/nmt/nmt/model_test.py
+--------------------------------------------------------------------------------
+nmt-chatbot/nmt/nmt/model_test.py:305:17: ERROR: Using member tf.contrib.learn.ModeKeys.TRAIN in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.TRAIN cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_test.py:321:16: ERROR: Using member tf.contrib.learn.ModeKeys.EVAL in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.EVAL cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_test.py:337:17: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_test.py:396:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:398:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:464:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:467:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:530:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:532:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:534:29: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:599:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:601:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:603:29: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:674:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:676:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:678:29: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:747:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:749:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:751:29: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:829:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:831:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:833:29: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:909:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:911:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_test.py:913:29: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+--------------------------------------------------------------------------------
+File: nmt-chatbot/nmt/nmt/inference_test.py
+--------------------------------------------------------------------------------
+nmt-chatbot/nmt/nmt/inference_test.py:53:18: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+File: nmt-chatbot/nmt/nmt/model.py
+--------------------------------------------------------------------------------
+nmt-chatbot/nmt/nmt/model.py:168:35: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+nmt-chatbot/nmt/nmt/model.py:173:20: ERROR: Using member tf.contrib.learn.ModeKeys.TRAIN in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.TRAIN cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:178:22: ERROR: Using member tf.contrib.learn.ModeKeys.EVAL in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.EVAL cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:180:22: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:185:20: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:194:20: ERROR: Using member tf.contrib.learn.ModeKeys.TRAIN in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.TRAIN cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:225:22: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:329:24: ERROR: Using member tf.contrib.learn.ModeKeys.TRAIN in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.TRAIN cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:342:24: ERROR: Using member tf.contrib.learn.ModeKeys.EVAL in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.EVAL cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:396:22: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:482:22: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:487:26: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+nmt-chatbot/nmt/nmt/model.py:491:17: WARNING: Using member tf.contrib.seq2seq.TrainingHelper in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/model.py:491:17: ERROR: Using member tf.contrib.seq2seq.TrainingHelper in deprecated module tf.contrib. tf.contrib.seq2seq.TrainingHelper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:496:21: WARNING: Using member tf.contrib.seq2seq.BasicDecoder in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/model.py:496:21: ERROR: Using member tf.contrib.seq2seq.BasicDecoder in deprecated module tf.contrib. tf.contrib.seq2seq.BasicDecoder cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:502:42: WARNING: Using member tf.contrib.seq2seq.dynamic_decode in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/model.py:502:42: ERROR: Using member tf.contrib.seq2seq.dynamic_decode in deprecated module tf.contrib. tf.contrib.seq2seq.dynamic_decode cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:547:23: WARNING: Using member tf.contrib.seq2seq.BeamSearchDecoder in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/model.py:547:23: ERROR: Using member tf.contrib.seq2seq.BeamSearchDecoder in deprecated module tf.contrib. tf.contrib.seq2seq.BeamSearchDecoder cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:563:19: WARNING: Using member tf.contrib.seq2seq.SampleEmbeddingHelper in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/model.py:563:19: ERROR: Using member tf.contrib.seq2seq.SampleEmbeddingHelper in deprecated module tf.contrib. tf.contrib.seq2seq.SampleEmbeddingHelper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:568:19: WARNING: Using member tf.contrib.seq2seq.GreedyEmbeddingHelper in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/model.py:568:19: ERROR: Using member tf.contrib.seq2seq.GreedyEmbeddingHelper in deprecated module tf.contrib. tf.contrib.seq2seq.GreedyEmbeddingHelper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:574:23: WARNING: Using member tf.contrib.seq2seq.BasicDecoder in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/model.py:574:23: ERROR: Using member tf.contrib.seq2seq.BasicDecoder in deprecated module tf.contrib. tf.contrib.seq2seq.BasicDecoder cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:582:42: WARNING: Using member tf.contrib.seq2seq.dynamic_decode in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/model.py:582:42: ERROR: Using member tf.contrib.seq2seq.dynamic_decode in deprecated module tf.contrib. tf.contrib.seq2seq.dynamic_decode cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:629:17: WARNING: tf.nn.sampled_softmax_loss requires manual check. `partition_strategy` has been removed from tf.nn.sampled_softmax_loss.  The 'div' strategy will be used by default.
+nmt-chatbot/nmt/nmt/model.py:675:24: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:707:24: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:874:21: ERROR: Using member tf.contrib.learn.ModeKeys.INFER  in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER  cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model.py:876:30: WARNING: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/model.py:876:30: ERROR: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib. tf.contrib.seq2seq.tile_batch cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: nmt-chatbot/nmt/nmt/nmt.py
+--------------------------------------------------------------------------------
+nmt-chatbot/nmt/nmt/nmt.py:320:9: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: nmt-chatbot/nmt/nmt/train.py
+--------------------------------------------------------------------------------
+nmt-chatbot/nmt/nmt/train.py:577:6: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+nmt-chatbot/nmt/nmt/train.py:593:6: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+nmt-chatbot/nmt/nmt/train.py:609:2: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+nmt-chatbot/nmt/nmt/train.py:754:8: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+File: nmt-chatbot/nmt/nmt/model_helper.py
+--------------------------------------------------------------------------------
+nmt-chatbot/nmt/nmt/model_helper.py:123:15: ERROR: Using member tf.contrib.learn.ModeKeys.TRAIN in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.TRAIN cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_helper.py:175:13: ERROR: Using member tf.contrib.learn.ModeKeys.EVAL in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.EVAL cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_helper.py:223:13: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_helper.py:273:20: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_helper.py:285:18: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_helper.py:395:31: ERROR: Using member tf.contrib.learn.ModeKeys.TRAIN  in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.TRAIN  cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_helper.py:409:18: WARNING: tf.contrib.rnn.LayerNormBasicLSTMCell requires manual check. (Manual edit required) `tf.contrib.rnn.LayerNormBasicLSTMCell` has been migrated to `tfa.rnn.LayerNormLSTMCell` in TensorFlow Addons. The API spec may have changed during the migration. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/model_helper.py:409:18: WARNING: Using member tf.contrib.rnn.LayerNormBasicLSTMCell in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+nmt-chatbot/nmt/nmt/model_helper.py:409:18: ERROR: Using member tf.contrib.rnn.LayerNormBasicLSTMCell in deprecated module tf.contrib. tf.contrib.rnn.LayerNormBasicLSTMCell cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_helper.py:415:18: WARNING: tf.contrib.rnn.NASCell requires manual check. (Manual edit required) `tf.contrib.rnn.NASCell` has been migrated to `tfa.rnn.NASCell` in TensorFlow Addons. The API spec may have changed during the migration. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/model_helper.py:415:18: WARNING: Using member tf.contrib.rnn.NASCell in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+nmt-chatbot/nmt/nmt/model_helper.py:415:18: ERROR: Using member tf.contrib.rnn.NASCell in deprecated module tf.contrib. tf.contrib.rnn.NASCell cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_helper.py:421:18: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+nmt-chatbot/nmt/nmt/model_helper.py:421:18: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_helper.py:428:18: WARNING: Using member tf.contrib.rnn.ResidualWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+nmt-chatbot/nmt/nmt/model_helper.py:428:18: ERROR: Using member tf.contrib.rnn.ResidualWrapper in deprecated module tf.contrib. tf.contrib.rnn.ResidualWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_helper.py:434:18: WARNING: Using member tf.contrib.rnn.DeviceWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+nmt-chatbot/nmt/nmt/model_helper.py:434:18: ERROR: Using member tf.contrib.rnn.DeviceWrapper in deprecated module tf.contrib. tf.contrib.rnn.DeviceWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_helper.py:575:13: ERROR: Using member tf.contrib.framework.list_variables in deprecated module tf.contrib. tf.contrib.framework.list_variables cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_helper.py:583:13: ERROR: Using member tf.contrib.framework.load_checkpoint in deprecated module tf.contrib. tf.contrib.framework.load_checkpoint cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/model_helper.py:596:8: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+nmt-chatbot/nmt/nmt/model_helper.py:614:6: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+File: nmt-chatbot/nmt/nmt/gnmt_model.py
+--------------------------------------------------------------------------------
+nmt-chatbot/nmt/nmt/gnmt_model.py:191:21: ERROR: Using member tf.contrib.learn.ModeKeys.INFER  in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER  cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/gnmt_model.py:220:38: ERROR: Using member tf.contrib.learn.ModeKeys.INFER  in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER  cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/gnmt_model.py:222:21: WARNING: Using member tf.contrib.seq2seq.AttentionWrapper in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/gnmt_model.py:222:21: ERROR: Using member tf.contrib.seq2seq.AttentionWrapper in deprecated module tf.contrib. tf.contrib.seq2seq.AttentionWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/gnmt_model.py:243:28: WARNING: Using member tf.contrib.seq2seq.AttentionWrapperState in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/gnmt_model.py:243:28: ERROR: Using member tf.contrib.seq2seq.AttentionWrapperState in deprecated module tf.contrib. tf.contrib.seq2seq.AttentionWrapperState cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: nmt-chatbot/nmt/nmt/attention_model.py
+--------------------------------------------------------------------------------
+nmt-chatbot/nmt/nmt/attention_model.py:68:13: WARNING: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/attention_model.py:68:13: ERROR: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib. tf.contrib.seq2seq.tile_batch cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/attention_model.py:70:29: WARNING: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/attention_model.py:70:29: ERROR: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib. tf.contrib.seq2seq.tile_batch cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/attention_model.py:72:20: WARNING: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/attention_model.py:72:20: ERROR: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib. tf.contrib.seq2seq.tile_batch cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/attention_model.py:101:21: ERROR: Using member tf.contrib.learn.ModeKeys.INFER  in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER  cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/attention_model.py:126:38: ERROR: Using member tf.contrib.learn.ModeKeys.INFER  in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER  cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/attention_model.py:128:11: WARNING: Using member tf.contrib.seq2seq.AttentionWrapper in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/attention_model.py:128:11: ERROR: Using member tf.contrib.seq2seq.AttentionWrapper in deprecated module tf.contrib. tf.contrib.seq2seq.AttentionWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/attention_model.py:137:11: WARNING: Using member tf.contrib.rnn.DeviceWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+nmt-chatbot/nmt/nmt/attention_model.py:137:11: ERROR: Using member tf.contrib.rnn.DeviceWrapper in deprecated module tf.contrib. tf.contrib.rnn.DeviceWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/attention_model.py:162:26: WARNING: Using member tf.contrib.seq2seq.LuongAttention in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/attention_model.py:162:26: ERROR: Using member tf.contrib.seq2seq.LuongAttention in deprecated module tf.contrib. tf.contrib.seq2seq.LuongAttention cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/attention_model.py:165:26: WARNING: Using member tf.contrib.seq2seq.LuongAttention in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/attention_model.py:165:26: ERROR: Using member tf.contrib.seq2seq.LuongAttention in deprecated module tf.contrib. tf.contrib.seq2seq.LuongAttention cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/attention_model.py:171:26: WARNING: Using member tf.contrib.seq2seq.BahdanauAttention in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/attention_model.py:171:26: ERROR: Using member tf.contrib.seq2seq.BahdanauAttention in deprecated module tf.contrib. tf.contrib.seq2seq.BahdanauAttention cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/attention_model.py:174:26: WARNING: Using member tf.contrib.seq2seq.BahdanauAttention in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+nmt-chatbot/nmt/nmt/attention_model.py:174:26: ERROR: Using member tf.contrib.seq2seq.BahdanauAttention in deprecated module tf.contrib. tf.contrib.seq2seq.BahdanauAttention cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: nmt-chatbot/nmt/nmt/utils/standard_hparams_utils.py
+--------------------------------------------------------------------------------
+nmt-chatbot/nmt/nmt/utils/standard_hparams_utils.py:26:9: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: nmt-chatbot/nmt/nmt/utils/misc_utils.py
+--------------------------------------------------------------------------------
+nmt-chatbot/nmt/nmt/utils/misc_utils.py:100:18: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: nmt-chatbot/nmt/nmt/utils/iterator_utils.py
+--------------------------------------------------------------------------------
+nmt-chatbot/nmt/nmt/utils/iterator_utils.py:87:17: WARNING: Changing dataset.make_initializable_iterator() to tf.compat.v1.data.make_initializable_iterator(dataset). Please check this transformation.
+
+nmt-chatbot/nmt/nmt/utils/iterator_utils.py:239:17: WARNING: Changing dataset.make_initializable_iterator() to tf.compat.v1.data.make_initializable_iterator(dataset). Please check this transformation.
+
+--------------------------------------------------------------------------------
+File: nmt-chatbot/nmt/nmt/utils/iterator_utils_test.py
+--------------------------------------------------------------------------------
+nmt-chatbot/nmt/nmt/utils/iterator_utils_test.py:39:14: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/utils/iterator_utils_test.py:117:14: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/utils/iterator_utils_test.py:182:14: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/utils/iterator_utils_test.py:281:14: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: nmt-chatbot/nmt/nmt/utils/common_test_utils.py
+--------------------------------------------------------------------------------
+nmt-chatbot/nmt/nmt/utils/common_test_utils.py:104:13: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+nmt-chatbot/nmt/nmt/utils/common_test_utils.py:111:13: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+================================================================================
+Detailed log follows:
+
+================================================================================
+================================================================================
+Input tree: 'nmt-chatbot/'
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/__init__.py'
+ outputting to 'nmt-chatbot_v2/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/train.py'
+ outputting to 'nmt-chatbot_v2/train.py'
+--------------------------------------------------------------------------------
+
+9:0: INFO: Not upgrading symbols because `tensorflow.compat.v1` was directly imported as `tf`.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/inference.py'
+ outputting to 'nmt-chatbot_v2/inference.py'
+--------------------------------------------------------------------------------
+
+57:11: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/core/__init__.py'
+ outputting to 'nmt-chatbot_v2/core/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/core/tokenizer.py'
+ outputting to 'nmt-chatbot_v2/core/tokenizer.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/core/sentence.py'
+ outputting to 'nmt-chatbot_v2/core/sentence.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/core/scorer.py'
+ outputting to 'nmt-chatbot_v2/core/scorer.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/setup/prepare_data.py'
+ outputting to 'nmt-chatbot_v2/setup/prepare_data.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/setup/__init__.py'
+ outputting to 'nmt-chatbot_v2/setup/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/setup/custom_summary.py'
+ outputting to 'nmt-chatbot_v2/setup/custom_summary.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/setup/settings.py'
+ outputting to 'nmt-chatbot_v2/setup/settings.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/tests/answers_replace.py'
+ outputting to 'nmt-chatbot_v2/tests/answers_replace.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/tests/tokenizer_standard.py'
+ outputting to 'nmt-chatbot_v2/tests/tokenizer_standard.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/tests/answers_scorer.py'
+ outputting to 'nmt-chatbot_v2/tests/answers_scorer.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/tests/answers_detokenizer.py'
+ outputting to 'nmt-chatbot_v2/tests/answers_detokenizer.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/tests/bpe_wpm_tokenizer.py'
+ outputting to 'nmt-chatbot_v2/tests/bpe_wpm_tokenizer.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/utils/pairing_testing_outputs.py'
+ outputting to 'nmt-chatbot_v2/utils/pairing_testing_outputs.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/utils/run_tensorboard.py'
+ outputting to 'nmt-chatbot_v2/utils/run_tensorboard.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/utils/prepare_for_deployment.py'
+ outputting to 'nmt-chatbot_v2/utils/prepare_for_deployment.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/model_test.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/model_test.py'
+--------------------------------------------------------------------------------
+
+305:17: ERROR: Using member tf.contrib.learn.ModeKeys.TRAIN in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.TRAIN cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+315:13: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+316:13: INFO: Renamed 'tf.tables_initializer' to 'tf.compat.v1.tables_initializer'
+321:16: ERROR: Using member tf.contrib.learn.ModeKeys.EVAL in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.EVAL cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+331:13: INFO: Renamed 'tf.tables_initializer' to 'tf.compat.v1.tables_initializer'
+337:17: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+350:15: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+351:13: INFO: Renamed 'tf.tables_initializer' to 'tf.compat.v1.tables_initializer'
+356:13: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+387:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+390:17: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+395:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+396:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+396:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+398:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+398:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+409:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+415:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+456:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+459:17: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+463:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+464:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+464:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+467:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+467:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+479:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+485:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+519:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+523:17: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+528:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+530:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+530:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+532:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+532:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+534:29: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+534:29: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+546:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+553:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+588:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+592:17: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+597:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+599:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+599:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+601:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+601:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+603:29: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+603:29: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+620:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+627:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+663:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+667:17: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+672:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+674:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+674:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+676:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+676:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+678:29: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+678:29: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+690:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+697:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+736:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+740:17: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+745:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+747:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+747:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+749:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+749:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+751:29: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+751:29: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+767:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+774:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+820:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+824:17: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+828:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+829:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+829:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+831:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+831:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+833:29: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+833:29: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+847:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+854:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+901:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+905:17: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+908:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+909:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+909:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+911:28: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+911:28: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+913:29: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+913:29: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+924:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+929:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/inference_test.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/inference_test.py'
+--------------------------------------------------------------------------------
+
+43:27: INFO: Renamed 'tf.test.get_temp_dir' to 'tf.compat.v1.test.get_temp_dir'
+53:18: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/__init__.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/model.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/model.py'
+--------------------------------------------------------------------------------
+
+100:17: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+101:8: INFO: Renamed 'tf.global_variables' to 'tf.compat.v1.global_variables'
+153:22: INFO: Added keywords to args of function 'tf.size'
+162:4: INFO: Renamed 'tf.get_variable_scope' to 'tf.compat.v1.get_variable_scope'
+168:35: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+173:20: ERROR: Using member tf.contrib.learn.ModeKeys.TRAIN in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.TRAIN cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+175:24: INFO: Added keywords to args of function 'tf.reduce_sum'
+176:50: INFO: Added keywords to args of function 'tf.reduce_sum'
+178:22: ERROR: Using member tf.contrib.learn.ModeKeys.EVAL in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.EVAL cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+180:22: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+183:10: INFO: Changed tf.to_int64 call to tf.cast(..., dtype=tf.int64).
+185:20: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+187:27: INFO: Added keywords to args of function 'tf.reduce_sum'
+190:13: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+194:20: ERROR: Using member tf.contrib.learn.ModeKeys.TRAIN in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.TRAIN cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+203:14: INFO: Renamed 'tf.train.GradientDescentOptimizer' to 'tf.compat.v1.train.GradientDescentOptimizer'
+205:14: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+210:18: INFO: tf.gradients called with colocate_gradients_with_ops argument, requires manual check: tf.gradients no longer takes 'colocate_gradients_with_ops' argument, it behaves as if it was set to True.
+210:18: INFO: Added keywords to args of function 'tf.gradients'
+213:10: INFO: Removed argument colocate_gradients_with_ops for function tf.gradients
+225:22: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+248:29: INFO: Renamed 'tf.log' to 'tf.math.log'
+250:10: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+254:11: INFO: Added keywords to args of function 'tf.cond'
+292:11: INFO: Added keywords to args of function 'tf.cond'
+295:16: INFO: tf.train.exponential_decay requires manual check. To use learning rate decay schedules with TensorFlow 2.0, switch to the schedules in `tf.keras.optimizers.schedules`.
+
+295:16: INFO: Renamed 'tf.train.exponential_decay' to 'tf.compat.v1.train.exponential_decay'
+321:20: INFO: tf.summary.merge requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+321:20: INFO: Renamed 'tf.summary.merge' to 'tf.compat.v1.summary.merge'
+322:9: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+322:9: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+323:9: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+323:9: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+329:24: ERROR: Using member tf.contrib.learn.ModeKeys.TRAIN in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.TRAIN cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+342:24: ERROR: Using member tf.contrib.learn.ModeKeys.EVAL in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.EVAL cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+373:11: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+374:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+375:30: INFO: Renamed 'tf.layers.Dense' to 'tf.compat.v1.layers.Dense'
+378:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+396:22: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+443:27: INFO: Added keywords to args of function 'tf.reduce_max'
+444:27: INFO: Changed tf.to_int32 call to tf.cast(..., dtype=tf.int32).
+445:10: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+471:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+482:22: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+486:25: INFO: Added keywords to args of function 'tf.transpose'
+487:26: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+487:26: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+491:17: WARNING: Using member tf.contrib.seq2seq.TrainingHelper in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+491:17: ERROR: Using member tf.contrib.seq2seq.TrainingHelper in deprecated module tf.contrib. tf.contrib.seq2seq.TrainingHelper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+496:21: WARNING: Using member tf.contrib.seq2seq.BasicDecoder in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+496:21: ERROR: Using member tf.contrib.seq2seq.BasicDecoder in deprecated module tf.contrib. tf.contrib.seq2seq.BasicDecoder cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+502:42: WARNING: Using member tf.contrib.seq2seq.dynamic_decode in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+502:42: ERROR: Using member tf.contrib.seq2seq.dynamic_decode in deprecated module tf.contrib. tf.contrib.seq2seq.dynamic_decode cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+547:23: WARNING: Using member tf.contrib.seq2seq.BeamSearchDecoder in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+547:23: ERROR: Using member tf.contrib.seq2seq.BeamSearchDecoder in deprecated module tf.contrib. tf.contrib.seq2seq.BeamSearchDecoder cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+563:19: WARNING: Using member tf.contrib.seq2seq.SampleEmbeddingHelper in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+563:19: ERROR: Using member tf.contrib.seq2seq.SampleEmbeddingHelper in deprecated module tf.contrib. tf.contrib.seq2seq.SampleEmbeddingHelper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+568:19: WARNING: Using member tf.contrib.seq2seq.GreedyEmbeddingHelper in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+568:19: ERROR: Using member tf.contrib.seq2seq.GreedyEmbeddingHelper in deprecated module tf.contrib. tf.contrib.seq2seq.GreedyEmbeddingHelper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+574:23: WARNING: Using member tf.contrib.seq2seq.BasicDecoder in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+574:23: ERROR: Using member tf.contrib.seq2seq.BasicDecoder in deprecated module tf.contrib. tf.contrib.seq2seq.BasicDecoder cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+582:42: WARNING: Using member tf.contrib.seq2seq.dynamic_decode in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+582:42: ERROR: Using member tf.contrib.seq2seq.dynamic_decode in deprecated module tf.contrib. tf.contrib.seq2seq.dynamic_decode cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+599:44: INFO: Added keywords to args of function 'tf.shape'
+629:17: WARNING: tf.nn.sampled_softmax_loss requires manual check. `partition_strategy` has been removed from tf.nn.sampled_softmax_loss.  The 'div' strategy will be used by default.
+630:18: INFO: Added keywords to args of function 'tf.transpose'
+655:22: INFO: Added keywords to args of function 'tf.transpose'
+664:23: INFO: Added keywords to args of function 'tf.transpose'
+666:11: INFO: Added keywords to args of function 'tf.reduce_sum'
+667:37: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+675:24: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+707:24: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+716:25: INFO: Added keywords to args of function 'tf.transpose'
+746:17: INFO: Added keywords to args of function 'tf.transpose'
+748:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+761:41: INFO: Renamed 'tf.nn.dynamic_rnn' to 'tf.compat.v1.nn.dynamic_rnn'
+836:27: INFO: Renamed 'tf.nn.bidirectional_dynamic_rnn' to 'tf.compat.v1.nn.bidirectional_dynamic_rnn'
+874:21: ERROR: Using member tf.contrib.learn.ModeKeys.INFER  in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER  cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+876:30: WARNING: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+876:30: ERROR: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib. tf.contrib.seq2seq.tile_batch cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/nmt.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/nmt.py'
+--------------------------------------------------------------------------------
+
+320:9: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+526:7: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+536:7: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+549:4: INFO: Renamed 'tf.gfile.MakeDirs' to 'tf.io.gfile.makedirs'
+555:6: INFO: Renamed 'tf.gfile.MakeDirs' to 'tf.io.gfile.makedirs'
+630:51: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+641:21: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+643:4: INFO: Renamed 'tf.gfile.MakeDirs' to 'tf.io.gfile.makedirs'
+650:7: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+667:11: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+667:39: INFO: Renamed 'tf.gfile.MakeDirs' to 'tf.io.gfile.makedirs'
+684:20: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+708:2: INFO: Renamed 'tf.app.run' to 'tf.compat.v1.app.run'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/train.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/train.py'
+--------------------------------------------------------------------------------
+
+490:10: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+498:15: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+500:14: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+502:15: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+510:19: INFO: tf.summary.FileWriter requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+510:19: INFO: Renamed 'tf.summary.FileWriter' to 'tf.compat.v1.summary.FileWriter'
+577:6: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+593:6: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+609:2: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+626:21: INFO: tf.summary.FileWriter requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+626:21: INFO: Renamed 'tf.summary.FileWriter' to 'tf.compat.v1.summary.FileWriter'
+637:23: INFO: tf.summary.FileWriter requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+637:23: INFO: Renamed 'tf.summary.FileWriter' to 'tf.compat.v1.summary.FileWriter'
+754:8: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/model_helper.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/model_helper.py'
+--------------------------------------------------------------------------------
+
+47:11: INFO: tf.random_uniform_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+47:11: INFO: Renamed 'tf.random_uniform_initializer' to 'tf.compat.v1.random_uniform_initializer'
+50:11: INFO: tf.keras.initializers.glorot_normal requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+50:11: INFO: Renamed 'tf.keras.initializers.glorot_normal' to 'tf.compat.v1.keras.initializers.glorot_normal'
+53:11: INFO: tf.keras.initializers.glorot_uniform requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+53:11: INFO: Renamed 'tf.keras.initializers.glorot_uniform' to 'tf.compat.v1.keras.initializers.glorot_uniform'
+90:27: INFO: Renamed 'tf.container' to 'tf.compat.v1.container'
+94:42: INFO: Renamed 'tf.gfile.Glob' to 'tf.io.gfile.glob'
+95:42: INFO: Renamed 'tf.gfile.Glob' to 'tf.io.gfile.glob'
+96:29: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+123:15: ERROR: Using member tf.contrib.learn.ModeKeys.TRAIN in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.TRAIN cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+149:27: INFO: Renamed 'tf.container' to 'tf.compat.v1.container'
+155:27: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+156:27: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+175:13: ERROR: Using member tf.contrib.learn.ModeKeys.EVAL in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.EVAL cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+202:27: INFO: Renamed 'tf.container' to 'tf.compat.v1.container'
+208:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+209:29: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+223:13: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+271:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+273:20: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+273:20: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+285:18: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+285:18: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+337:22: INFO: Renamed 'tf.fixed_size_partitioner' to 'tf.compat.v1.fixed_size_partitioner'
+346:22: INFO: Renamed 'tf.fixed_size_partitioner' to 'tf.compat.v1.fixed_size_partitioner'
+358:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+376:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+383:11: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+395:31: ERROR: Using member tf.contrib.learn.ModeKeys.TRAIN  in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.TRAIN  cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+400:18: INFO: Renamed 'tf.contrib.rnn.BasicLSTMCell' to 'tf.compat.v1.nn.rnn_cell.BasicLSTMCell'
+405:18: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+409:18: WARNING: tf.contrib.rnn.LayerNormBasicLSTMCell requires manual check. (Manual edit required) `tf.contrib.rnn.LayerNormBasicLSTMCell` has been migrated to `tfa.rnn.LayerNormLSTMCell` in TensorFlow Addons. The API spec may have changed during the migration. Please see https://github.com/tensorflow/addons for more info.
+409:18: WARNING: Using member tf.contrib.rnn.LayerNormBasicLSTMCell in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+409:18: ERROR: Using member tf.contrib.rnn.LayerNormBasicLSTMCell in deprecated module tf.contrib. tf.contrib.rnn.LayerNormBasicLSTMCell cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+415:18: WARNING: tf.contrib.rnn.NASCell requires manual check. (Manual edit required) `tf.contrib.rnn.NASCell` has been migrated to `tfa.rnn.NASCell` in TensorFlow Addons. The API spec may have changed during the migration. Please see https://github.com/tensorflow/addons for more info.
+415:18: WARNING: Using member tf.contrib.rnn.NASCell in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+415:18: ERROR: Using member tf.contrib.rnn.NASCell in deprecated module tf.contrib. tf.contrib.rnn.NASCell cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+421:18: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+421:18: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+428:18: WARNING: Using member tf.contrib.rnn.ResidualWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+428:18: ERROR: Using member tf.contrib.rnn.ResidualWrapper in deprecated module tf.contrib. tf.contrib.rnn.ResidualWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+434:18: WARNING: Using member tf.contrib.rnn.DeviceWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+434:18: ERROR: Using member tf.contrib.rnn.DeviceWrapper in deprecated module tf.contrib. tf.contrib.rnn.DeviceWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+508:11: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+515:27: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+515:27: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+517:6: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+517:6: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+517:44: INFO: Renamed 'tf.global_norm' to 'tf.linalg.global_norm'
+525:11: INFO: Renamed 'tf.train.NewCheckpointReader' to 'tf.compat.v1.train.NewCheckpointReader'
+541:14: INFO: Renamed 'tf.tables_initializer' to 'tf.compat.v1.tables_initializer'
+568:9: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+572:4: INFO: Renamed 'tf.gfile.MakeDirs' to 'tf.io.gfile.makedirs'
+575:13: ERROR: Using member tf.contrib.framework.list_variables in deprecated module tf.contrib. tf.contrib.framework.list_variables cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+583:13: ERROR: Using member tf.contrib.framework.load_checkpoint in deprecated module tf.contrib. tf.contrib.framework.load_checkpoint cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+596:8: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+596:8: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+600:20: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+601:18: INFO: Renamed 'tf.assign' to 'tf.compat.v1.assign'
+604:12: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+604:27: INFO: Renamed 'tf.all_variables' to 'tf.compat.v1.all_variables'
+606:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+607:15: INFO: Renamed 'tf.initialize_all_variables' to 'tf.compat.v1.initialize_all_variables'
+614:6: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+628:16: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+629:16: INFO: Renamed 'tf.tables_initializer' to 'tf.compat.v1.tables_initializer'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/inference.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/inference.py'
+--------------------------------------------------------------------------------
+
+45:6: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+61:21: INFO: Renamed 'tf.Summary' to 'tf.compat.v1.Summary'
+63:13: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+74:6: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+100:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+236:4: INFO: Renamed 'tf.gfile.Rename' to 'tf.io.gfile.rename'
+243:8: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+246:18: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+251:12: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+257:8: INFO: Renamed 'tf.gfile.Remove' to 'tf.io.gfile.remove'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/gnmt_model.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/gnmt_model.py'
+--------------------------------------------------------------------------------
+
+75:15: INFO: Added keywords to args of function 'tf.transpose'
+77:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+122:37: INFO: Renamed 'tf.nn.dynamic_rnn' to 'tf.compat.v1.nn.dynamic_rnn'
+153:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+155:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+156:39: INFO: Renamed 'tf.nn.dynamic_rnn' to 'tf.compat.v1.nn.dynamic_rnn'
+187:15: INFO: Added keywords to args of function 'tf.transpose'
+191:21: ERROR: Using member tf.contrib.learn.ModeKeys.INFER  in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER  cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+220:38: ERROR: Using member tf.contrib.learn.ModeKeys.INFER  in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER  cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+222:21: WARNING: Using member tf.contrib.seq2seq.AttentionWrapper in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+222:21: ERROR: Using member tf.contrib.seq2seq.AttentionWrapper in deprecated module tf.contrib. tf.contrib.seq2seq.AttentionWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+243:28: WARNING: Using member tf.contrib.seq2seq.AttentionWrapperState in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+243:28: ERROR: Using member tf.contrib.seq2seq.AttentionWrapperState in deprecated module tf.contrib. tf.contrib.seq2seq.AttentionWrapperState cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+279:11: INFO: Renamed 'tf.contrib.framework.nest.is_sequence' to 'tf.nest.is_nested'
+284:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+287:11: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+294:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+325:21: INFO: Renamed 'tf.contrib.framework.nest.map_structure' to 'tf.nest.map_structure'
+329:2: INFO: Renamed 'tf.contrib.framework.nest.assert_same_structure' to 'tf.nest.assert_same_structure'
+330:2: INFO: Renamed 'tf.contrib.framework.nest.map_structure' to 'tf.nest.map_structure'
+332:9: INFO: Renamed 'tf.contrib.framework.nest.map_structure' to 'tf.nest.map_structure'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/attention_model.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/attention_model.py'
+--------------------------------------------------------------------------------
+
+68:13: WARNING: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+68:13: ERROR: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib. tf.contrib.seq2seq.tile_batch cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+70:29: WARNING: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+70:29: ERROR: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib. tf.contrib.seq2seq.tile_batch cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+72:20: WARNING: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+72:20: ERROR: Using member tf.contrib.seq2seq.tile_batch in deprecated module tf.contrib. tf.contrib.seq2seq.tile_batch cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+97:15: INFO: Added keywords to args of function 'tf.transpose'
+101:21: ERROR: Using member tf.contrib.learn.ModeKeys.INFER  in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER  cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+126:38: ERROR: Using member tf.contrib.learn.ModeKeys.INFER  in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER  cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+128:11: WARNING: Using member tf.contrib.seq2seq.AttentionWrapper in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+128:11: ERROR: Using member tf.contrib.seq2seq.AttentionWrapper in deprecated module tf.contrib. tf.contrib.seq2seq.AttentionWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+137:11: WARNING: Using member tf.contrib.rnn.DeviceWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+137:11: ERROR: Using member tf.contrib.rnn.DeviceWrapper in deprecated module tf.contrib. tf.contrib.rnn.DeviceWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+162:26: WARNING: Using member tf.contrib.seq2seq.LuongAttention in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+162:26: ERROR: Using member tf.contrib.seq2seq.LuongAttention in deprecated module tf.contrib. tf.contrib.seq2seq.LuongAttention cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+165:26: WARNING: Using member tf.contrib.seq2seq.LuongAttention in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+165:26: ERROR: Using member tf.contrib.seq2seq.LuongAttention in deprecated module tf.contrib. tf.contrib.seq2seq.LuongAttention cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+171:26: WARNING: Using member tf.contrib.seq2seq.BahdanauAttention in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+171:26: ERROR: Using member tf.contrib.seq2seq.BahdanauAttention in deprecated module tf.contrib. tf.contrib.seq2seq.BahdanauAttention cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+174:26: WARNING: Using member tf.contrib.seq2seq.BahdanauAttention in deprecated module tf.contrib.seq2seq. (Manual edit required) tf.contrib.seq2seq.* have been migrated to `tfa.seq2seq.*` in TensorFlow Addons. Please see https://github.com/tensorflow/addons for more info.
+174:26: ERROR: Using member tf.contrib.seq2seq.BahdanauAttention in deprecated module tf.contrib. tf.contrib.seq2seq.BahdanauAttention cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+190:6: INFO: Added keywords to args of function 'tf.transpose'
+193:22: INFO: tf.summary.image requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+193:22: INFO: Renamed 'tf.summary.image' to 'tf.compat.v1.summary.image'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/nmt_test.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/nmt_test.py'
+--------------------------------------------------------------------------------
+
+45:31: INFO: Renamed 'tf.test.get_temp_dir' to 'tf.compat.v1.test.get_temp_dir'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/utils/standard_hparams_utils.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/utils/standard_hparams_utils.py'
+--------------------------------------------------------------------------------
+
+26:9: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/utils/misc_utils_test.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/utils/misc_utils_test.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/utils/evaluation_utils.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/utils/evaluation_utils.py'
+--------------------------------------------------------------------------------
+
+76:8: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+88:33: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+103:33: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+109:6: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+120:33: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+121:35: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+136:33: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+137:35: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/utils/evaluation_utils_test.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/utils/evaluation_utils_test.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/utils/vocab_utils_test.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/utils/vocab_utils_test.py'
+--------------------------------------------------------------------------------
+
+33:29: INFO: Renamed 'tf.test.get_temp_dir' to 'tf.compat.v1.test.get_temp_dir'
+37:35: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+42:27: INFO: Renamed 'tf.test.get_temp_dir' to 'tf.compat.v1.test.get_temp_dir'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/utils/__init__.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/utils/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/utils/misc_utils.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/utils/misc_utils.py'
+--------------------------------------------------------------------------------
+
+95:5: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+97:35: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+100:18: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+111:22: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+113:35: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+122:33: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+130:9: INFO: Renamed 'tf.Print' to 'tf.compat.v1.Print'
+130:22: INFO: Added keywords to args of function 'tf.shape'
+137:12: INFO: Renamed 'tf.Summary' to 'tf.compat.v1.Summary'
+137:30: INFO: Renamed 'tf.Summary' to 'tf.compat.v1.Summary'
+145:17: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/utils/iterator_utils.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/utils/iterator_utils.py'
+--------------------------------------------------------------------------------
+
+47:44: INFO: Renamed 'tf.string_split' to 'tf.compat.v1.string_split'
+65:21: INFO: Changed tf.to_int32 call to tf.cast(..., dtype=tf.int32).
+66:25: INFO: Added keywords to args of function 'tf.size'
+68:52: INFO: Added keywords to args of function 'tf.size'
+87:17: WARNING: Changing dataset.make_initializable_iterator() to tf.compat.v1.data.make_initializable_iterator(dataset). Please check this transformation.
+
+138:10: INFO: Renamed 'tf.string_split' to 'tf.compat.v1.string_split'
+138:41: INFO: Renamed 'tf.string_split' to 'tf.compat.v1.string_split'
+143:38: INFO: Added keywords to args of function 'tf.size'
+143:56: INFO: Added keywords to args of function 'tf.size'
+179:12: INFO: Changed tf.to_int32 call to tf.cast(..., dtype=tf.int32).
+179:24: INFO: Added keywords to args of function 'tf.size'
+180:12: INFO: Added keywords to args of function 'tf.size'
+185:34: INFO: Added keywords to args of function 'tf.size'
+185:48: INFO: Added keywords to args of function 'tf.size'
+228:13: INFO: Changed tf.to_int64 call to tf.cast(..., dtype=tf.int64).
+234:8: INFO: Renamed 'tf.contrib.data.group_by_window' to 'tf.data.experimental.group_by_window'
+239:17: WARNING: Changing dataset.make_initializable_iterator() to tf.compat.v1.data.make_initializable_iterator(dataset). Please check this transformation.
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/utils/iterator_utils_test.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/utils/iterator_utils_test.py'
+--------------------------------------------------------------------------------
+
+32:4: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+39:14: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+58:24: INFO: Renamed 'tf.tables_initializer' to 'tf.compat.v1.tables_initializer'
+110:4: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+117:14: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+138:24: INFO: Renamed 'tf.tables_initializer' to 'tf.compat.v1.tables_initializer'
+175:4: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+182:14: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+189:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+203:24: INFO: Renamed 'tf.tables_initializer' to 'tf.compat.v1.tables_initializer'
+281:14: ERROR: Using member tf.contrib.training.HParams in deprecated module tf.contrib. tf.contrib.training.HParams cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+293:24: INFO: Renamed 'tf.tables_initializer' to 'tf.compat.v1.tables_initializer'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/utils/vocab_utils.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/utils/vocab_utils.py'
+--------------------------------------------------------------------------------
+
+63:13: INFO: Changed tf.to_int32 call to tf.cast(..., dtype=tf.int32).
+63:25: INFO: Renamed 'tf.decode_raw' to 'tf.io.decode_raw'
+65:34: INFO: Added keywords to args of function 'tf.shape'
+68:2: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+71:2: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+87:4: INFO: tf.assert_rank requires manual check. tf.assert_rank has been changed to return None, and the data and summarize arguments have been removed.
+The calls have been converted to compat.v1 for safety (even though  they may already have been correct).
+87:4: INFO: Renamed 'tf.assert_rank' to 'tf.compat.v1.assert_rank'
+88:12: INFO: Added keywords to args of function 'tf.shape'
+89:4: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+96:4: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+103:33: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+114:5: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+132:12: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+176:33: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/utils/nmt_utils.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/utils/nmt_utils.py'
+--------------------------------------------------------------------------------
+
+50:8: INFO: Renamed 'tf.gfile.GFile' to 'tf.io.gfile.GFile'
+83:18: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/utils/common_test_utils.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/utils/common_test_utils.py'
+--------------------------------------------------------------------------------
+
+104:13: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+111:13: ERROR: Using member tf.contrib.learn.ModeKeys.INFER in deprecated module tf.contrib. tf.contrib.learn.ModeKeys.INFER cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/scripts/bleu.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/scripts/bleu.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/scripts/rouge.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/scripts/rouge.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'nmt-chatbot/nmt/nmt/scripts/__init__.py'
+ outputting to 'nmt-chatbot_v2/nmt/nmt/scripts/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
